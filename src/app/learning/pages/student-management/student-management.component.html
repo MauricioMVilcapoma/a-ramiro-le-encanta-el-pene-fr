@@ -1,6 +1,6 @@
 <!-- Student catalogue -->
 <div class="table-wrapper">
-  <h3>{{ 'title.students' | translate }}</h3>
+  <h3>{{ 'title.events' | translate }}</h3>
 
   <!--Add/Edit Form-->
   <app-student-create-and-edit (editCanceled)="onCancelEdit()"
@@ -10,7 +10,7 @@
                                [student]="studentData"/>
   <!-- Data Table -->
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8"
-         matSort matSortActive="name" matSortDirection="asc">
+         matSort matSortActive="id" matSortDirection="asc">
 
     <ng-container matColumnDef="id">
       <th *matHeaderCellDef mat-header-cell mat-sort-header> {{ 'student.id' | translate }} </th>
@@ -22,16 +22,31 @@
       <td *matCellDef="let element" mat-cell>{{ element.name }}</td>
     </ng-container>
 
-    <ng-container matColumnDef="age">
-      <th *matHeaderCellDef mat-header-cell mat-sort-header>{{ 'student.age' | translate }}</th>
-      <td *matCellDef="let element" mat-cell>{{ element.age }}</td>
+    <ng-container matColumnDef="date">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header>{{ 'student.date' | translate }}</th>
+      <td *matCellDef="let element" mat-cell>{{ element.date }}</td>
     </ng-container>
 
-    <ng-container matColumnDef="address">
-      <th *matHeaderCellDef mat-header-cell mat-sort-header>{{ 'student.address' | translate }}</th>
-      <td *matCellDef="let element" mat-cell>{{ element.address }}</td>
+    <ng-container matColumnDef="description">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header>{{ 'student.description' | translate }}</th>
+      <td *matCellDef="let element" mat-cell>{{ element.description }}</td>
     </ng-container>
 
+    <ng-container matColumnDef="location">
+        <th *matHeaderCellDef mat-header-cell mat-sort-header>{{ 'student.location' | translate }}</th>
+        <td *matCellDef="let element" mat-cell>{{ element.location }}</td>
+
+    </ng-container>
+
+    <ng-container matColumnDef="capacity">
+        <th *matHeaderCellDef mat-header-cell mat-sort-header>{{ 'student.capacity' | translate }}</th>
+        <td *matCellDef="let element" mat-cell>{{ element.capacity }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="organizer_id">
+          <th *matHeaderCellDef mat-header-cell mat-sort-header>{{ 'student.organizer_id' | translate }}</th>
+          <td *matCellDef="let element" mat-cell>{{ element.organizer_id }}</td>
+    </ng-container>
     <ng-container matColumnDef="actions">
       <th *matHeaderCellDef mat-header-cell> {{ 'student.actions' | translate }}</th>
       <td *matCellDef="let element" mat-cell>

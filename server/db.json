@@ -1,22 +1,40 @@
 {
   "students": [
     {
-      "id": 1,
-      "name": "John Doe",
-      "age": 26,
-      "address": "Nowhere"
+      "id": 6,
+      "name": "Art & Design Expo",
+      "description": "Showcasing the latest trends in art and design. s fmdsab,fnm",
+      "date": "2024-10-22",
+      "location": "Paris",
+      "capacity": 4000,
+      "organizer_id": 5
     },
     {
-      "id": 2,
-      "name": "Jason Bourne",
-      "age": 34,
-      "address": "Unknown"
+      "id": 7,
+      "name": "Startup Pitch Night",
+      "description": "A night where startups present their ideas to investors.",
+      "date": "2024-07-12",
+      "location": "San Francisco",
+      "capacity": 800,
+      "organizer_id": 6
     },
     {
-      "id": 3,
-      "name": "William Norton",
-      "age": 38,
-      "address": "One Secret Place"
+      "id": 8,
+      "name": "Healthcare Innovation Forum",
+      "description": "Exploring the future of healthcare through technology.",
+      "date": "2024-10-05",
+      "location": "Berlin",
+      "capacity": 1800,
+      "organizer_id": 7
+    },
+    {
+      "name": "asdsa",
+      "date": "0022-02-22",
+      "location": "a",
+      "capacity": 2,
+      "organizer_id": 2,
+      "description": "asdsad",
+      "id": 9
     }
   ]
 }

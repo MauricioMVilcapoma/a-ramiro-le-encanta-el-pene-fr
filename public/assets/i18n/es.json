@@ -4,20 +4,23 @@
     "placeholder": "Digite texto a filtrar"
   },
   "title": {
-    "students": "Estudiantes",
+    "events": "Eventos",
     "add": "Nuevo estudiante",
     "edit": "Editar estudiante"
   },
   "student": {
-    "id": "Núm.",
+    " id": "ID Evento",
     "name": "Nombre",
-    "age": "Edad",
-    "address": "Dirección",
+    "description": "Descripcion",
+    "date": "Fecha",
+    "location": "Lugar",
+    "capacity": "Capacidad",
+    "organizer_id": "ID Organizador",
     "actions": "Acciones"
   },
   "footer": {
     "rights": "Derechos de autor © 2024 {{ api }}, Todos los derechos reservados",
     "intro": "Desarrollado ",
-    "author": "por el Equipo {{ team }}"
+    "author": "por el Equipo {{ Netvision }}"
   }
 }

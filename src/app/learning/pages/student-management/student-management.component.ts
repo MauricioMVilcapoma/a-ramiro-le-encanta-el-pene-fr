@@ -20,7 +20,7 @@ export class StudentManagementComponent implements OnInit, AfterViewInit  {
   // Attributes
   studentData: Student;
   dataSource!: MatTableDataSource<any>;
-  displayedColumns: string[] = ['id', 'name', 'age', 'address', 'actions'];
+  displayedColumns: string[] = ['id', 'name', 'date', 'description', 'location', 'capacity', 'organizer_id', 'actions'];
   isEditMode: boolean;
 
   @ViewChild(MatPaginator, { static: false}) paginator!: MatPaginator;
@@ -76,13 +76,13 @@ export class StudentManagementComponent implements OnInit, AfterViewInit  {
 
   private deleteStudent(studentId: number): void {
     this.studentService.delete(studentId)
-      .subscribe(() => {
-        this.dataSource.data = this.dataSource.data
-          .filter((student: Student) => {
-            return student.id !== studentId ? student : false;
-          });
-      });
-  };
+        .subscribe(() => {
+          this.dataSource.data = this.dataSource.data
+              .filter((student: Student) => {
+                return student.id !== studentId ? student : false;
+              });
+        });
+  }
 
   // UI Event Handlers
 

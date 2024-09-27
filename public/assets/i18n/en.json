@@ -4,20 +4,23 @@
     "placeholder": "Enter text to filter"
   },
   "title": {
-    "students": "Students",
+    "events": "Events",
     "add": "New Student",
     "edit": "Edit Student"
   },
   "student": {
-    "id": "No.",
+    "id": "Event ID",
     "name": "Name",
-    "age": "Age",
-    "address": "Address",
+    "description": "Description",
+    "date": "Date",
+    "location": "Location",
+    "capacity": "Capacity",
+    "organizer_id": "Organizer ID",
     "actions": "Actions"
   },
   "footer": {
     "rights": "Copyright © 2024 {{ api }}, All rights reserved",
     "intro": "Developed ",
-    "author": "by {{ team }} Team"
+    "author": "by {{ Netvision }} Team"
   }
 }
